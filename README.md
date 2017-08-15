@@ -6,6 +6,7 @@ If you want to run the project in development mode run this:
 ```sh
 $ npm run dev
 ```
+then you'll see a small todo app(demo is [here](https://react-heroku.herokuapp.com/))
 
 ### For production setup
 
