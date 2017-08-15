@@ -1,0 +1,76 @@
+section.todo
+  padding-top: 50px
+  h1
+    text-align: center
+    font-size: 30px
+  p
+    text-align: center
+    margin-top: 25px
+
+  div.todo__list
+    display: inline-block
+    width: 100%
+    margin: 28px 0px
+    ul
+      display: inline-block
+      width: 100%
+      li.todo__item
+        display: inline-block
+        width: 100%
+        line-height: 16px
+        font-size: 15px
+        &.todo__item--selected
+          input.todo__input
+            color: #bdbdbd
+            text-decoration: line-through
+        div.todo__checkbox
+          display: inline-block
+          height: 48px
+          line-height: 48px
+          width: 50px
+          text-align: center
+          opacity: 0
+          transition: opacity .15s ease
+          &.todo__checkbox--visible
+            opacity: 1
+          &.todo__checkbox--selected
+            span::after
+              opacity: 1
+          span
+            display: inline-block
+            vertical-align: middle
+            position: relative
+            height: 18px
+            width: 18px
+            border-radius: 50%
+            border: 1px solid #bdbdbd
+            &::after
+              content: ''
+              display: inline-block
+              position: absolute
+              width: 12px
+              height: 12px
+              left: 2px
+              top: 2px
+              border-radius: 50%
+              background-color: $gold-dark
+              opacity: 0
+        input.todo__input
+          display: inline-block
+          padding: 0px 10px
+          width: calc(100% - 50px)
+          float: right
+          font-size: 15px
+          font-weight: 300
+          height: 48px
+          border: none
+          box-shadow: none
+          appearance: none
+          outline: none
+          user-select: none
+          border-bottom: 1px solid #eeeeee
+          box-sizing: border-box
+        //div.todo__content
+        //  display: none
+        //  &.todo__content--visible
+        //    display: inline-block
