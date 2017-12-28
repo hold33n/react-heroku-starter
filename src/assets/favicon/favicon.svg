@@ -1,0 +1,17 @@
+<svg version="1.1" id="Favicon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 465 465" style="enable-background:new 0 0 465 465;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#1A1A1A;}
+	.st1{fill:#BCA460;}
+</style>
+<path class="st0" d="M365,465H100C45,465,0,420,0,365V100C0,45,45,0,100,0h265c55,0,100,45,100,100v265C465,420,420,465,365,465z"/>
+<g>
+	<g>
+		<polygon class="st1" points="193.1,80.5 265.6,80.5 265.6,343.8 299.9,343.8 299.9,384.5 193.1,384.5 193.1,345.1 224.9,345.1
+			224.9,122.5 193.1,122.5 193.1,81.8 		"/>
+	</g>
+	<g>
+		<rect x="131.6" y="345.3" class="st1" width="40.7" height="39"/>
+	</g>
+</g>
+</svg>

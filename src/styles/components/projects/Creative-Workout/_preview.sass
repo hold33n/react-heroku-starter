@@ -1,0 +1,325 @@
+section.snickers-ui
+  display: inline-block
+  position: relative
+  background-image: url('../assets/img/stardust-pattern.png')
+  background-repeat: repeat
+  background-size: 300px
+  width: 100%
+  background-color: #262626
+  text-align: center
+  overflow: hidden
+  +max-screen(1920px)
+      min-height: 100vh
+  +max-screen(1700px)
+      min-height: 0px
+  +max-screen(991px)
+      padding-bottom: 120px
+  +max-screen(768px)
+      padding-bottom: 80px
+  div.container
+    +min-screen(1700px)
+      width: 1440px
+    +min-screen(1921px)
+      width: 1500px
+  div.snickers-ui__descr
+    &::before
+        content: 'Our works'
+        display: block
+        text-align: left
+        letter-spacing: 1px
+        float: left
+        color: $gold
+        opacity: .5
+        font-size: 16px
+        margin-top: 245px
+        padding-bottom: 30px
+        width: 270px
+        border-bottom: 2px solid $gold
+        text-transform: uppercase
+        +max-screen(1700px)
+            font-size: 15px
+            width: 200px
+            margin-top: 200px
+            margin-bottom: 27px
+        +max-screen(991px)
+            margin-top: 20px
+            width: 100%
+            text-align: center
+            border-bottom: none
+            padding: 0px 5px
+
+    h2
+        position: relative
+        text-align: left
+        font-family: 'Playfair Display', serif
+        margin-left: -2px
+        font-size: 65px
+        color: #fff
+        margin-top: 440px
+        +max-screen(1920px)
+            font-size: 62px
+        +max-screen(1700px)
+            font-size: 55px
+            margin-top: 350px
+        +max-screen(1200px)
+            font-size: 45px
+        +max-screen(991px)
+            margin-top: 120px
+            font-size: 55px
+            text-align: center
+        +max-screen(576px)
+            margin-top: 75px
+            font-size: 52px
+            padding-right: 5px
+            padding-left: 5px
+        +max-screen(465px)
+            font-size: 40px
+        +max-screen(400px)
+            font-size: 36px
+        &::selection
+            background: $grey-dark
+            color: $gold
+        > span.gold
+            color: $gold
+            &::selection
+                background: $grey-dark
+                color: #fff !important
+    p
+        text-align: left
+        color: #fff
+        font-size: 16px
+        line-height: 28px
+        margin-top: 55px
+        margin-bottom: 55px
+        max-width: 500px
+        font-weight: 300
+        +max-screen(576px)
+            padding-right: 5px
+            padding-left: 5px
+        +max-screen(1700px)
+            font-size: 14.5px
+            line-height: 24px
+        +max-screen(991px)
+            max-width: none
+            text-align: center
+        +max-screen(576px)
+            padding-right: 5px
+            padding-left: 5px
+        &::selection
+            background: $grey-dark
+            color: $gold
+    a
+        display: block
+        background-color: transparent
+        color: $gold
+        width: 160px
+        height: 40px
+        float: left
+        margin: 0 auto 50px
+        text-transform: uppercase
+        border: 2px solid $gold
+        padding: 11px 20px
+        font-size: 13px
+        line-height: 15px
+        border-radius: 22px
+        cursor: pointer
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2)
+        transition: background-color .2s ease
+        font-weight: 400
+        letter-spacing: 1px
+        +max-screen(991px)
+            float: none
+        +max-screen(576px)
+            padding-right: 5px
+            padding-left: 5px
+        &:hover
+            background-color: $gold
+            color: #fff
+    span.coming-soon
+        display: block
+        color: $gold
+        float: left
+        letter-spacing: 1px
+        font-size: 17px
+        +max-screen(991px)
+            width: 100%
+            text-align: center
+        +max-screen(576px)
+            padding-right: 5px
+            padding-left: 5px
+
+
+  div.snickers-ui__shoot
+    text-align: center
+    float: right
+    +max-screen(991px)
+        float: left
+    +max-screen(576px)
+        width: 100%
+    div.snickers-ui__shoot--wrap
+      display: inline-block
+      width: 600px
+      height: 600px
+      position: relative
+      margin-top: 275px
+      margin-bottom: 275px
+      text-align: center
+      +max-screen(1700px)
+          margin-top: 200px
+          margin-bottom: 220px
+          width: 450px
+          height: 450px
+      +max-screen(991px)
+          margin-top: 150px
+          margin-bottom: 70px
+      +max-screen(768px)
+          margin-top: 100px
+      +max-screen(576px)
+          width: 100%
+          height: calc(100vw - 50px)
+          padding: 0px 5px
+          margin-bottom: 35px
+          margin-top: 75px
+      &::before
+        opacity: 0
+        content: ''
+        display: block
+        width: 720px
+        height: 720px
+        top: -65px
+        left: -65px
+        position: absolute
+        background-image: url('../assets/img/shoot.png')
+        background-size: cover
+        background-repeat: no-repeat
+        animation: shoot-rotate 200s linear infinite
+        cursor: default
+        +max-screen(1700px)
+            width: 500px
+            height: 500px
+            top: -20px
+            left: -20px
+        +max-screen(576px)
+            width: calc(100vw - 50px)
+            height: calc(100vw - 50px)
+            left: 10px
+            top: 10px
+      div.waves
+        display: inline-block
+        position: absolute
+        opacity: 0
+        transition: none
+        border-radius: 50%
+        &.waves-size--3
+          width: 600px
+          height: 600px
+          top: -5px
+          left: -5px
+          background-color: #2A2A2A
+          box-shadow: 0px 9px 29px 0px rgba(29, 29, 29, 0.4)
+          +max-screen(1700px)
+              width: 420px
+              height: 420px
+              top: 20px
+              left: 20px
+          +max-screen(576px)
+              width: calc(100vw - 110px)
+              height: calc(100vw - 110px)
+              left: 40px
+              top: 40px
+        &.waves-size--2
+          width: 428px
+          height: 428px
+          top: 81px
+          left: 81px
+          background-color: #2D2D2D
+          box-shadow: 0px 9px 29px 0px rgba(29, 29, 29, 0.4)
+          +max-screen(1700px)
+              width: 300px
+              height: 300px
+              top: 80px
+              left: 80px
+          +max-screen(576px)
+              width: calc(100vw - 190px)
+              height: calc(100vw - 190px)
+              left: 80px
+              top: 80px
+        &.waves-size--1
+          width: 257px
+          height: 257px
+          top: 166.5px
+          left: 166.5px
+          background-color: #303030
+          box-shadow: 0px 9px 29px 0px rgba(29, 29, 29, 0.4)
+          +max-screen(1700px)
+              width: 180px
+              height: 180px
+              top: 140px
+              left: 140px
+          +max-screen(576px)
+              width: calc(100vw - 270px)
+              height: calc(100vw - 270px)
+              left: 120px
+              top: 120px
+      img.shoot
+        display: block
+        position: absolute
+        top: 92px
+        left: -30px
+        transform: translateY(-15px)
+        width: 600px
+        opacity: 0
+        +max-screen(1700px)
+            width: 445px
+            top: 65px
+            left: 0
+        +max-screen(576px)
+            width: calc(100% - 12px)
+        +max-screen(440px)
+            top: 55px
+        +max-screen(380px)
+            top: 40px
+      &.active
+        &::before
+          opacity: 1
+          transition: opacity .5s ease
+          transition-delay: 1.5s
+        img.shoot
+          opacity: 1
+          transition: opacity .5s ease
+          transition-delay: 1.5s
+          animation: snickers-fly 2.1s linear infinite alternate
+          user-drag: none
+          user-select: none
+        div.waves
+          opacity: 1
+          transition: opacity .5s ease
+          &.waves-size--3
+            transition-delay: 1s
+          &.waves-size--2
+            transition-delay: 0.5s
+
+
+  div.snickers-card
+    display: inline-block
+    position: relative
+    background-color: #fff
+    width: calc(100% - 30px)
+    max-width: 960px
+    height: 480px
+    border-radius: 12px
+    top: calc(50vh - 240px)
+    opacity: .5
+
+@keyframes shoot-rotate
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(360deg)
+
+
+@keyframes snickers-fly
+  from
+    transform: translateY(-15px)
+  to
+    transform: translateY(15px)

@@ -1,0 +1,18 @@
+{
+  "extends": ["tslint:latest", "tslint-react"],
+  "rules": {
+    "max-line-length": [false, 150],
+    "no-console": [true, "debug", "info", "log", "time", "timeEnd", "trace"],
+    "no-var-requires": false,
+    "no-submodule-imports": false,
+    "no-empty-interface": true,
+    "semicolon": [true, "never"],
+    "quotemark": ["single"],
+    "ordered-imports": true,
+    "object-literal-sort-keys": false,
+    "jsx-no-multiline-js": false,
+    "max-classes-per-file": [true, 3],
+    "no-trailing-whitespace": true,
+    "indent": [true, "tabs", 2]
+  }
+}

@@ -5,24 +5,12 @@ node_modules/*
 
 # testing
 coverage
+jest
+gulp
 
 # production
 build
-
-# misc
-.DS_Store
-.env
-npm-debug.log
-# See http://help.github.com/ignore-files/ for more about ignoring files.
-
-# dependencies
-node_modules
-
-# testing
-coverage
-
-# production
-build
+static
 
 # misc
 .DS_Store

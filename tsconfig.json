@@ -1,0 +1,64 @@
+{
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "esnext",
+    "target": "es5",
+    "lib": [ "es2015", "es2015.promise", "dom" ],
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "jsx": "react",
+    "baseUrl": "./",
+    "allowSyntheticDefaultImports": true,
+    "removeComments": false,
+    "allowUnusedLabels": false,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "extensions" : {
+      "**/*.ts": "TS",
+      "**/*.tsx": "TS",
+      "**/*.es": "JS",
+    },
+    "paths": {
+      "_ducks/*": [ "./src/ducks/*" ],
+      "_pages/*": [ "./src/view/pages/*" ],
+      "_decorators/*": [ "./src/view/decorators/*" ],
+      "_components/*": [ "./src/view/components/*" ],
+      "_sections/*": [ "./src/view/sections/*" ]
+    }
+  },
+  "include": [
+    "./src/ducks/**/*",
+    "./src/redux/**/*",
+    "./src/view/**/*",
+    "./src/*"
+  ],
+  "awesomeTypescriptLoaderOptions": {
+    "forkChecker": true,
+    "useWebpackText": false,
+    "useCache": true,
+    "cacheDirectory": ".gulp/ts",
+    "useTranspileModule": true,
+    "silent": true,
+    "babelOptions": {
+      "presets": ["es6-promise", "react-optimize", "stage-0", ["env", {
+        "targets": {
+          "browsers": [">1%", "last 3 versions", "safari >= 7"],
+          "modules": false,
+          "useBuiltIns": true
+        }
+      }]]
+    }
+  },
+  "baseUrl": ".",
+  "paths": {
+    "./*": ["./*"]
+  },
+  "compileOnSave": false,
+  "buildOnSave": false
+}

@@ -1,0 +1,83 @@
+div.product-list
+	box-sizing: border-box
+	display: inline-block
+	margin-top: 45px
+	border-radius: 10px
+	width: 100%
+	padding: 20px 15px
+	background-color: #25294D
+	box-shadow: rgba(0, 0, 0, .12) 0 1px 6px, rgba(0, 0, 0, .12) 0 1px 4px
+
+	table
+		width: 100%
+		background-color: #25294d !important
+		tr
+			border: none !important
+		th, td
+			padding: 0 14px !important
+			background-color: #25294d !important
+			a
+				color: #2196f3
+		input[type="checkbox"] + div div div svg:first-child
+			fill: $blue-dark-2 !important
+		input[type="checkbox"] + div div div svg:last-child
+			fill: $blue-light-accent !important
+
+		.product-list__header
+			background-color: #25294d !important
+			border: none !important
+			th
+				color: $blue-dark-2 !important
+				font-size: 12px !important
+				font-weight: 500 !important
+				span.name
+					display: inline-block
+					line-height: 20px
+					vertical-align: middle
+				span.material-icons
+					display: inline-block
+					color: $blue-dark-2 !important
+					position: relative
+					bottom: 4px
+					visibility: hidden
+					opacity: 0
+					transition: all .15s ease
+					cursor: pointer
+					vertical-align: middle
+				&:hover
+					span.material-icons
+						visibility: visible
+						bottom: 0px
+						opacity: 1
+
+
+		tbody
+			td
+				color: $blue-dark-1 !important
+
+		.product-list__footer
+			background-color: #25294d !important
+			border: none !important
+			tr
+				height: 55px !important
+
+		.product-list__textfield
+			width: 100% !important
+			font-size: 14px !important
+			div
+				color: $blue-dark-2 !important
+				hr:first-child
+					border-color: $blue-dark-2 !important
+				hr:last-child
+					border-color: $blue-light-accent !important
+			input
+				color: $blue-dark-1 !important
+
+		.product-list__submit-button
+			font-size: 14px !important
+			color: $blue-light-accent !important
+			div
+				span
+					padding-left: 8px !important
+					padding-right: 8px !important
+					font-size: 13px !important
