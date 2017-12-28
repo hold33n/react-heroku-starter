@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom'
 import {AppContainer} from 'react-hot-loader'
 import App from './App'
 
-const render = Component => {
+const render = (Component: React.SFC): void => {
   ReactDOM.render(
     <AppContainer>
       <Component />

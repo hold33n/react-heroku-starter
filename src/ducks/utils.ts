@@ -1,17 +1,13 @@
-import {List, OrderedMap} from 'immutable'
+import {List} from 'immutable'
 
-export function arrayToImmutable(jsArr, RecordType) {
-  return jsArr.reduce((acc, el) => {
+export function arrayToImmutable(jsArr: any[], RecordType: any): List<any[]> {
+  return jsArr.reduce((acc: List<any[]>, el: any) => {
     return acc.push(new RecordType(el))
-  }, new List([]))
+  }, List([]))
 }
 
-export function objectToImmutable(jsObj, RecordType) {
-  return jsObj.reduce((acc, el) => {
-    return acc.set(el.id, new RecordType(el))
-  }, new OrderedMap({}))
-}
-
-export const filterMessage = (message) => !(/(has joined the channel)/).test(message.text)
-
-export const filterMessagesArray = (messages) => messages.filter((el) => filterMessage(el))
+// export function objectToImmutable(jsObj: object, RecordType: any): OrderedMap<K, V> {
+//   return jsObj.reduce((acc, el) => {
+//     return acc.set(el.id, new RecordType(el))
+//   }, new OrderedMap({}))
+// }

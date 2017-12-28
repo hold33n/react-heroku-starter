@@ -1,3 +1,4 @@
-/**
- * Created by aleksej on 12/26/17.
- */
+export interface IAction {
+  type: string;
+  payload?: any;
+}

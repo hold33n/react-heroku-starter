@@ -5,9 +5,8 @@ import reducer from './reducer'
 
 const sagaMiddleware = createSagaMiddleware()
 
-const store = createStore(reducer, {}, compose(
+export const store = createStore(reducer, {}, compose(
   applyMiddleware(sagaMiddleware),
-  // applyMiddleware(thunk),
   // Remove it from production
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 ))
@@ -15,5 +14,12 @@ const store = createStore(reducer, {}, compose(
 
 sagaMiddleware.run(saga)
 window.store = store
+
+declare global {
+  interface Window {
+    __REDUX_DEVTOOLS_EXTENSION__: any;
+    store: any;
+  }
+}
 
 export default store

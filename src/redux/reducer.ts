@@ -1,6 +1,6 @@
 import {combineReducers} from 'redux'
-import testReducer, {moduleName as testModule} from '../ducks/module'
+import productListReducer, {moduleName as productList} from '../ducks/productsList'
 
 export default combineReducers({
-  [testModule]: testReducer,
+  [productList]: productListReducer,
 })
